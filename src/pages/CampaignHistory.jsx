@@ -127,7 +127,7 @@ export default function CampaignHistory() {
               {/* AI Suggestions */}
               {aiSuggestions.length > 0 && (
                 <div className="mt-4 space-y-2 text-sm">
-                  <p className="font-medium text-gray-700">AI Message Suggestions:</p>
+                  <p className="font-medium text-gray-700">AI Suggestions:</p>
                   {aiSuggestions.map((msg, i) => (
                     <button
                       key={i}
