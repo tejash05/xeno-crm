@@ -64,7 +64,7 @@ export default function CampaignHistory() {
   const handleSendMessage = async (msg) => {
     if (!msg.trim()) return toast.error('Message cannot be empty')
     try {
-      await axios.patch(`http://localhost:5050/api/campaigns/${selectedCampaign._id}`, {
+      await axios.patch(`https://xeno-crm-r2jm.onrender.com/campaigns/${selectedCampaign._id}`, {
         status: 'sent',
         message: msg
       })
