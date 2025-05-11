@@ -115,7 +115,7 @@ export const simulateCampaignDelivery = async (campaign) => {
         status
       })
 
-      await axios.post('http://localhost:5050/api/campaigns/delivery-receipt', {
+      await axios.post('https://xeno-crm-r2jm.onrender.com/api/campaigns/delivery-receipt', {
         messageId,
         status
       })
