@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Point to your backend server (localhost or deployed)
-const API_BASE = 'http://localhost:5050/api'
+const API_BASE = 'https://xeno-crm-r2jm.onrender.com/api'
 
 export const getAudienceCount = async (rules) => {
   const res = await axios.post(`${API_BASE}/segments/preview`, { rules }, {

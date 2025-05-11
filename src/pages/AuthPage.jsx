@@ -52,7 +52,7 @@ export default function AuthPage() {
       const endpoint = isLogin ? '/api/auth/login' : '/api/auth/signup'
       const payload = isLogin ? { email, password } : { name, email, password }
 
-      const res = await fetch(`http://localhost:5050${endpoint}`, {
+      const res = await fetch(`https://xeno-crm-r2jm.onrender.com${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -132,7 +132,7 @@ export default function AuthPage() {
             <GoogleLogin
               onSuccess={async (credentialResponse) => {
                 try {
-                  const res = await fetch('http://localhost:5050/api/auth/google-login', {
+                  const res = await fetch('https://xeno-crm-r2jm.onrender.com/api/auth/google-login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ token: credentialResponse.credential })
