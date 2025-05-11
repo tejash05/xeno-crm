@@ -121,7 +121,7 @@ export default function CampaignHistory() {
                 disabled={loadingAI}
                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 mt-3 rounded-md text-sm"
               >
-                {loadingAI ? 'Generating...' : '🧠 Suggest Messages'}
+                {loadingAI ? 'Generating...' : ' ✨AI Assistant'}
               </button>
 
               {/* AI Suggestions */}
