@@ -15,7 +15,7 @@ const app = express();
 
 // ✅ Proper CORS configuration
 app.use(cors({
-  origin: 'https://xeno-frontend-3qja.onrender.com/',
+  origin: 'https://xeno-frontend-3qja.onrender.com',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH' ,  'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
