@@ -21,9 +21,8 @@ export default function App() {
 
   return (
     <div className="bg-gray-100 min-h-screen font-sans">
-      <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
 
-      {/* Show navbar only if NOT on /auth */}
+      {/* navbar only if NOT on /auth */}
       {!isAuthPage && (
         <nav className="bg-gray-900 px-6 py-4 flex justify-between items-center shadow-md">
           <div className="text-white text-xl font-bold tracking-wide">
