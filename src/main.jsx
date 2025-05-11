@@ -12,7 +12,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GoogleOAuthProvider clientId={clientId}>
       <BrowserRouter>
-        <Toaster />
+      <Toaster
+          position="top-right"
+          toastOptions={{ duration: 3000 }}
+        />
         <App />
       </BrowserRouter>
     </GoogleOAuthProvider>
