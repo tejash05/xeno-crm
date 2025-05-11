@@ -6,7 +6,7 @@ import './index.css'
 import { Toaster } from 'react-hot-toast'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 
-const clientId = '604211447346-losdo5iv4dqu8alf7ne5uultj61fncgt.apps.googleusercontent.com' // ⬅️ Replace with your actual Google client ID
+const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
