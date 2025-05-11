@@ -43,7 +43,7 @@ export default function CampaignHistory() {
     setAiSuggestions([])
 
     try {
-      const res = await axios.post('http://localhost:5050/api/ai/suggest-messages', {
+      const res = await axios.post('https://xeno-crm-r2jm.onrender.com/api/ai/suggest-messages', {
         objective: selectedCampaign.segmentName || selectedCampaign.name,
         audienceInfo: {
           total_spend: selectedCampaign.audienceSize || 0,
