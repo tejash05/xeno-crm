@@ -9,7 +9,7 @@ export default function CampaignCard({ campaign, onSelect }) {
     try {
       const updated = await updateCampaignStatus(campaign._id, 'sent')
       setStatus(updated.status)
-      toast.success('Marked as Sent ✅')
+      toast.success('Marked as Sent ')
     } catch (err) {
       toast.error('Failed to update status')
     }
@@ -19,7 +19,7 @@ export default function CampaignCard({ campaign, onSelect }) {
     try {
       const updated = await updateCampaignStatus(campaign._id, 'failed')
       setStatus(updated.status)
-      toast.success('Marked as Failed ❌')
+      toast.success('Marked as Failed ')
     } catch (err) {
       toast.error('Failed to update status')
     }

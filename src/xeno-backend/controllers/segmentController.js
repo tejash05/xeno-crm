@@ -3,7 +3,7 @@ import { parseRulesToQuery } from '../utils/ruleParser.js'
 
 export const previewAudienceSize = async (req, res) => {
   try {
-    console.log('📥 Incoming request body:', req.body)  // ✅ log this
+    console.log('📥 Incoming request body:', req.body)  
 
     const { rules } = req.body
     const mongoQuery = parseRulesToQuery(rules)
@@ -13,7 +13,7 @@ export const previewAudienceSize = async (req, res) => {
     const size = await Customer.countDocuments(mongoQuery)
     res.json({ size })
   } catch (err) {
-    console.error('❌ Preview error:', err.message)
+    console.error('Preview error:', err.message)
     res.status(500).json({ error: 'Failed to preview audience' })
   }
 }
@@ -24,7 +24,7 @@ export const saveSegment = async (req, res) => {
     await segment.save()
     res.status(201).json({ message: 'Segment saved successfully' })
   } catch (err) {
-    console.error('❌ Error saving segment:', err)
+    console.error('Error saving segment:', err)
     res.status(500).json({ error: 'Failed to save segment' })
   }
 }

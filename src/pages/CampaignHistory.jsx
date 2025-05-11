@@ -68,7 +68,7 @@ export default function CampaignHistory() {
         status: 'sent',
         message: msg
       })
-      toast.success('Message sent and campaign marked as sent ✅')
+      toast.success('Message sent and campaign marked as sent ')
       setCustomMessage('')
     } catch (err) {
       console.error(err)

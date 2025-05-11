@@ -61,7 +61,7 @@ export default function AuthPage() {
       const data = await res.json()
       if (!res.ok) throw new Error(data.error || 'Auth failed')
 
-      toast.success(`✅ ${isLogin ? 'Login' : 'Signup'} successful!`)
+      toast.success(`${isLogin ? 'Login' : 'Signup'} successful!`)
       localStorage.setItem('user', JSON.stringify(data))
       window.location.href = '/'
     } catch (err) {
